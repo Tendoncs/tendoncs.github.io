@@ -28,7 +28,7 @@
 </header>
 
 <!-- Put image here later -->
-<img src="../../imgs/Alex.png">
+<img src="../imgs/Alex.png">
 
 <!-- Side bar -->
 <aside>
@@ -67,18 +67,17 @@ You can use this tool to help debug some code. It is a quick way to iterate thro
 
 <br><br>
 So here are the basic set up for non lambda.
-
-arry.map { |num| num.to_i}
-| 1 | 2 |3|  4  |  5 | 6 | 7|
-
-1: Calling the object. In this case an array.
-2: Calling the .map on the array.
-3: Open the { this starts what is like a for each loop.
-4: Here is where we take assign each iteration a name. In this case we are calling it num.
-5: This is where you start doing things to the iteration of the array. These actions can be basic or advance.
-6: action taken on the iteration.
-7: Ends the "for each loop"
 <br><br>
+arry.map { |num| num.to_i}
+<br><br>
+
+1: Calling the object. In this case an array.<br>
+2: Calling the .map on the array.<br>
+3: Open { starts what is like a for each loop.<br>
+4: |num| assigns each iteration to a variable name.<br>
+5: num.to_i is the where the heavy lifting happens. It is the action that is taken on each item in the array.These actions can be basic or advance.<br>
+6: Ends the "for each loop"<br>
+<br>
 Thank you for reading about map and Enumerable.
 <br>
 <br>
