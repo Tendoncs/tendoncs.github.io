@@ -1,0 +1,113 @@
+<!-- Enumerable#map -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="./stylesheets/blog.css">
+
+<meta charset="UTF-8">
+<title>My Blog</title>
+</head>
+
+<body>
+
+</body>
+
+
+<header>
+<center>
+<nav>
+<a href="/portfolio/">portfolio</a> |
+<a href="/Bio/">Bio</a> |
+<a href="/Contact/">Contact</a> |
+<a href="/Resume/">Resume</a>
+<a href="/Blog/">Blog</a>
+</nav
+</center>
+</header>
+
+<!-- Put image here later -->
+<img src="imgs/Alex.png">
+
+<!-- Side bar -->
+<aside>
+  <ul>
+  <li>
+  <a href="#">Content</a>
+    <ul>
+      <li>
+        <a href="#">Content Item 1</a>
+      </li>
+    </ul>
+  </li>
+    <li><a href="#">Best Tools</a></li>
+        <ul>
+      <li>
+        <a href="#">Tool 1</a>
+      </li>
+            <li>
+        <a href="#">Tool 2</a>
+      </li>
+    </ul>
+  </li>
+  </ul>
+
+</aside>
+
+
+
+<section>
+
+<h1>Enumerable map</h1>
+
+Enumerable map is a great way to go through arrays or hashs. It has amazing short hand ways to iterate through them. With this short hand stuff you have to balance how easy the code is to read and how short it is. You do not want to scaurfice readability just to make the code look cool.
+<br><br>
+You can use this tool to help debug some code. It is a quick way to iterate through an array. Lets say you have an array and they all should be true. You can go into the code and add lambda syntax to check for true.  "p array.map(&:odd?)". This will print out everything in the array for you to check. A lot faster then setting up a for each loop.
+
+<br><br>
+So here are the basic set up for non lambda.
+
+arry.map { |num| num.to_i}
+| 1 | 2 |3|  4  |  5 | 6 | 7|
+
+1: Calling the object. In this case an array.
+2: Calling the .map on the array.
+3: Open the { this starts what is like a for each loop.
+4: Here is where we take assign each iteration a name. In this case we are calling it num.
+5: This is where you start doing things to the iteration of the array. These actions can be basic or advance.
+6: action taken on the iteration.
+7: Ends the "for each loop"
+<br><br>
+Thank you for reading about map and Enumerable.
+<br>
+<br>
+Written by
+<br>
+Abraham Lincoln
+
+
+</section>
+
+</article>
+
+</html>
+
+<!--
+How was it to wireframe and create an HTML page with a pair?
+I was really lucky to had a good pair. We seamed both to be easy going so we just work together well.
+
+Did you find wireframing to be helpful to your development process?
+I do, It really helps see how things will work together.
+
+What did you and your pair decide made a good wireframe?
+Use a tool to make it. KISS are the best. Keep it simple.
+
+What new semantic elements did you learn about (if any)?
+none, Just got to work with them more. The more I work with the the better.
+
+ -->
+
+
+
+
