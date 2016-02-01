@@ -1,0 +1,32 @@
+img
+{
+  position:relative;
+  top:0;
+  left:0;
+  width: 200px;
+  height: 200px;
+}
+
+nav
+{
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: #4CAF50;
+  border-bottom-width: thick;
+}
+
+aside
+{
+  position: relative;
+}
+
+section
+{
+  position: absolute;
+  top: 60px;
+  left: 250px;
+  margin-right:50px;
+}
