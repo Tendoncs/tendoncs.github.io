@@ -59,26 +59,46 @@
 
 <section>
 
-<h1>Enumerable map</h1>
+<h1>Classes</h1>
 
-Enumerable map is a great way to go through arrays or hashs. It has amazing short hand ways to iterate through them. With this short hand stuff you have to balance how easy the code is to read and how short it is. You do not want to scaurfice readability just to make the code look cool.
-<br><br>
-You can use this tool to help debug some code. It is a quick way to iterate through an array. Lets say you have an array and they all should be true. You can go into the code and add lambda syntax to check for true.  "p array.map(&:odd?)". This will print out everything in the array for you to check. A lot faster then setting up a for each loop.
-
-<br><br>
-So here are the basic set up for non lambda.
-<br><br>
-arry.map { |num| num.to_i}
+Classes are a package of methods and variables that can be reused. It helps prevent really complcated variable names. You can assign proerties to the class like hair color, eye color and job. I will make an example class and use commits to explain it.
 <br><br>
 
-1: Calling the object. In this case an array.<br>
-2: Calling the .map on the array.<br>
-3: Open { starts what is like a for each loop.<br>
-4: |num| assigns each iteration to a variable name.<br>
-5: num.to_i is the where the heavy lifting happens. It is the action that is taken on each item in the array.These actions can be basic or advance.<br>
-6: Ends the "for each loop"<br>
-<br>
-Thank you for reading about map and Enumerable.
+#declare class person
+class person
+
+#This code initializes the class when you create object person.
+#During the initializes it takes name, age, job. Job as a default unemployed if you dont put a job in.
+def initialize (name, age, job = 'unemployed')
+  #This sets the instance variables. This is info that can be used in all the class.
+  @name = name
+  @age = age
+  @job = job
+
+end
+
+#when you call this you can update the job.
+def job_update(job_new)
+  @job = job_new
+end
+
+
+end
+
+#This allows you to initializes pat and bill as a person.
+#Pat is a plumber who is 35.
+Pat  = Person.new("Pat", 35, "plumber")
+#Bill is a young unemployed person.
+Bill = Person.new("Bill", 13)
+
+Bill.job_update("paper_route")
+
+Bill is now delivering papers.
+
+<br><br>
+
+
+
 <br>
 <br>
 Written by
