@@ -64,35 +64,35 @@
 Classes are a package of methods and variables that can be reused. It helps prevent really complcated variable names. You can assign proerties to the class like hair color, eye color and job. I will make an example class and use commits to explain it.
 <br><br>
 
-#declare class person
-class person
+<br>#declare class person
+<br>class person
 
-#This code initializes the class when you create object person.
-#During the initializes it takes name, age, job. Job as a default unemployed if you dont put a job in.
-def initialize (name, age, job = 'unemployed')
-  #This sets the instance variables. This is info that can be used in all the class.
-  @name = name
-  @age = age
-  @job = job
-
+<br>#This code initializes the class when you create object person.
+<br>#During the initializes it takes name, age, job. Job as a default unemployed if you dont put a job in.
+<br>def initialize (name, age, job = 'unemployed')
+<br>  #This sets the instance variables. This is info that can be used in all the class.
+<br>  @name = name
+<br>  @age = age
+<br>  @job = job
+<br>
+<br>end
+<br>
+<br>#when you call this you can update the job.
+<br>def job_update(job_new)
+<br>  @job = job_new
 end
 
-#when you call this you can update the job.
-def job_update(job_new)
-  @job = job_new
+<br><br>
 end
-
-
-end
-
-#This allows you to initializes pat and bill as a person.
-#Pat is a plumber who is 35.
-Pat  = Person.new("Pat", 35, "plumber")
-#Bill is a young unemployed person.
-Bill = Person.new("Bill", 13)
-
+<br><br>
+<br>#This allows you to initializes pat and bill as a person.
+<br>#Pat is a plumber who is 35.
+<br>Pat  = Person.new("Pat", 35, "plumber")
+<br>#Bill is a young unemployed person.
+<br>Bill = Person.new("Bill", 13)
+<br><br>
 Bill.job_update("paper_route")
-
+<br><br>
 Bill is now delivering papers.
 
 <br><br>
